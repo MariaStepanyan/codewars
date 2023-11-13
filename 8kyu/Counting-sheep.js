@@ -13,7 +13,7 @@
 // SOLUTION 1
 
 function countSheeps(sheep) {
-  return sheep.reduce((acc, ship) => (ship === true ? acc + 1 : acc), 0)
+  return sheep.reduce((acc, elem) => (elem === true ? acc + 1 : acc), 0)
 }
 
 //  SOLUTION 2
