@@ -8,6 +8,21 @@
 // SOLUTION 1
 
 function reverseWords(str) {
+  return str
+    .split(' ')
+    .map((str) => str.split('').reverse().join(''))
+    .join(' ')
+}
+
+// SOLUTION 2
+
+function reverseWords(str) {
+  return str.split('').reverse().join('').split(' ').reverse().join(' ')
+}
+
+// SOLUTION 3
+
+function reverseWords(str) {
   let res = ''
   let i
   while (str.length > 0) {
@@ -26,7 +41,7 @@ function reverseWords(str) {
   return res
 }
 
-// SOLUTION 2
+// SOLUTION 4
 
 function reverseWords(str) {
   function processString(str, res) {
